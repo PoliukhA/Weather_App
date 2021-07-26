@@ -1,0 +1,81 @@
+[
+    {
+        "id": 756135,
+        "name": "Warsaw",
+        "state": "",
+        "country": "PL",
+        "coord": {
+            "lon": 21.01178,
+            "lat": 52.229771
+        }
+    },
+    {
+        "id": 3094802,
+        "name": "Kraków",
+        "state": "",
+        "country": "PL",
+        "coord": {
+            "lon": 19.91667,
+            "lat": 50.083328
+        }
+    },
+    {    "id": 3081368,
+        "name": "Wrocław",
+        "state": "",
+        "country": "PL",
+        "coord": {
+            "lon": 17.033331,
+            "lat": 51.099998
+        }
+    },
+    {
+        "id": 3099434,
+        "name": "Gdańsk",
+        "state": "",
+        "country": "PL",
+        "coord": {
+            "lon": 18.64637,
+            "lat": 54.352051
+        }
+    },
+    {
+        "id": 2643743,
+        "name": "London",
+        "state": "",
+        "country": "GB",
+        "coord": {
+            "lon": -0.12574,
+            "lat": 51.50853
+        }
+    },
+    {
+        "id": 3143244,
+        "name": "Oslo",
+        "state": "",
+        "country": "NO",
+        "coord": {
+            "lon": 10.74609,
+            "lat": 59.912731
+        }
+    },
+    {
+        "id": 2759794,
+        "name": "Amsterdam",
+        "state": "",
+        "country": "NL",
+        "coord": {
+            "lon": 4.88969,
+            "lat": 52.374031
+        }
+    },
+    {
+        "id": 2950158,
+        "name": "Berlin",
+        "state": "",
+        "country": "DE",
+        "coord": {
+            "lon": 10.45,
+            "lat": 54.033329
+        }
+    }
+]
