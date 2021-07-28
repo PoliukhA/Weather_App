@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
     // Город погода которого нужна
     let cityCode = "756135";
     // Формируем url для GET запроса
-    let url = `http://api.openweathermap.org/data/2.5/weather?id=${cityCode}&lang=en&appid=${apiKey}`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityCode}&lang=en&appid=${apiKey}`;
 
     let temperature = document.querySelectorAll('.location__temp');
     // console.log(temperature)
     let weatherNowIcon = document.querySelector('#weather-now')
 
-  /*   let citySelect = document.querySelector('#city')
-    console.log(citySelect) */
-    // let mydata = JSON.parse(id);
+    /* let citySelect = document.querySelector('#city')
+    console.log(citySelect)
+    let mydata = JSON.parse(id); */
 
     // let jsonFile = getFile('cityData.json'); 
     // var parsedJson = JSON.parse(jsonFile);
@@ -43,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         // data.main.temp содержит значение в Кельвинах, отнимаем от  273, чтобы получить значение в градусах Цельсия
         //Добавляем описание погоды
         document.querySelector('.location__descr').textContent = data.weather[0]['description'];
-        //Добавляем иконку погоды
-        // document.querySelector('.forecast__icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
 
         document.querySelector('.details__feels').innerHTML = Math.round(data.main.feels_like - 273) + '&deg;';
 

@@ -73,7 +73,7 @@ html[data-theme="night"] body {
 
 .cloudy-night,
 .night,
-.partly-cloudy,
+.clouds,
 .rain,
 .snow,
 .sun,
@@ -92,8 +92,8 @@ html[data-theme="night"] body {
     background-image: url('../icons/night.png');
 }
 
-.partly-cloudy {
-    background-image: url('../icons/partly-cloudy.png');
+.clouds {
+    background-image: url('../icons/clouds.png');
 }
 
 .rain {
