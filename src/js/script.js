@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {
 
     let apiKey = "c9cf2ad794f8f8bf0e51b15085e82a2a";
-    // Город погода которого нужна
     let cityCode = "756135";
-    // Формируем url для GET запроса
     let url = `https://api.openweathermap.org/data/2.5/weather?id=${cityCode}&lang=en&appid=${apiKey}`;
 
     let temperature = document.querySelectorAll('.location__temp');
@@ -38,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     //Получаем прогноз в массив data
     fetch(url).then(function (resp) {return resp.json() }).then(function (data) {
-        //добавляем название города
+        
         document.querySelector('.location__city').textContent = data.name;
-        // data.main.temp содержит значение в Кельвинах, отнимаем от  273, чтобы получить значение в градусах Цельсия
+        
         //Добавляем описание погоды
         document.querySelector('.location__descr').textContent = data.weather[0]['description'];
 
