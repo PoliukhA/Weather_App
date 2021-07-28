@@ -56,7 +56,7 @@ html[data-theme="night"] body {
 
 .details {
     display: grid;
-    grid-template-columns: 1fr 475px;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
     &__item {
         margin: 15px 0;
@@ -119,6 +119,8 @@ html[data-theme="night"] body {
 .haze {
     background-image: url('../icons/wind.png');
 }
+
+@import 'blocks/media';
 
 
 

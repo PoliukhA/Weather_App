@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+    .forecast {
+        overflow: auto;
+        padding: $padding;
+        &__icon {
+            background-size: 100%, contain;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        margin: 50px 10px;
+    }
+    .forecast {
+        &__icon {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
     // console.log(temperature)
     let weatherNowIcon = document.querySelector('#weather-now')
 
-    let citySelect = document.querySelector('#city')
-    console.log(citySelect)
+  /*   let citySelect = document.querySelector('#city')
+    console.log(citySelect) */
     // let mydata = JSON.parse(id);
 
     // let jsonFile = getFile('cityData.json'); 
     // var parsedJson = JSON.parse(jsonFile);
-    // console.log('zhopa')
+    // console.log('bug')
     // .then(data => {
     //     for (var i=0; i<data[0].length; i++){
     //         citySelect.appendChild('<option value='+ data[0][i].id + '>'+ data[0][i].name  +'</option>')
     //     }
     // })
 
-    fetch('./js/cityData.json')
+   /*  fetch('./js/cityData.json')
         .then(results => results.json())
         .then(console.log)
         .then(data => {
@@ -34,15 +34,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
             for (var i=0; i<data[0].length; i++){
                         citySelect.appendChild('<option value='+ data[0][i].id + '>'+ data[0][i].name  +'</option>')
                     }
-        })
-
-    
-    console.log('love')
+        }) */
 
     //Получаем прогноз в массив data
     fetch(url).then(function (resp) {return resp.json() }).then(function (data) {
         //добавляем название города
-        // document.querySelector('.location__city').textContent = data.name;
+        document.querySelector('.location__city').textContent = data.name;
         // data.main.temp содержит значение в Кельвинах, отнимаем от  273, чтобы получить значение в градусах Цельсия
         //Добавляем описание погоды
         document.querySelector('.location__descr').textContent = data.weather[0]['description'];
